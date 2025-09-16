@@ -1,0 +1,123 @@
+/* corpo geral */
+body {
+  font-family: Arial, sans-serif;
+  background: #141726; /* azul escuro mais suave */
+  color: #e6e6f0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* centralizar o conteúdo principal */
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* título principal */
+header {
+  text-align: center;       /* centraliza horizontalmente */
+  margin-bottom: 30px;      /* espaço entre o título e o passo 1 */
+}
+
+header h1 {
+  color: #c7c7ff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* blocos (fieldset como cards) */
+form fieldset {
+  background: #161a2b; /* azul/roxo escuro */
+  border: none;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(10, 15, 40, 0.9); /* sombra fixa */
+}
+
+/* legend */
+form fieldset legend {
+  color: #a3b0ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* inputs e selects */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #24294d;
+  color: #fff;
+  margin-top: 6px;
+  margin-bottom: 25px;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(163, 176, 255, 0.8);
+}
+
+/* botões */
+button {
+  background: linear-gradient(180deg, #323b6b, #1f2236);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(180deg, #3d4780, #272a42);
+}
+
+/* Blocos do resumo com estilo igual aos fieldsets */
+.summary-card {
+  background: #1f2236;           /* mesmo fundo azul/roxo escuro */
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4); /* mesma sombra suave */
+  margin-bottom: 20px;
+}
+
+.summary-block {
+  background: #161a2b;           /* mesmo fundo dos fieldsets */
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px rgba(10, 15, 40, 0.9); /* mesma sombra */
+}
+
+.summary-block h3 {
+  margin-top: 0;
+  color: #a3b0ff;                /* mesmo tom das legendas */
+}
+
+.summary-block ul {
+  padding-left: 18px;
+}
+
+.summary-button {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(180deg, #323b6b, #1f2236);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.summary-button:hover {
+  background: linear-gradient(180deg, #3d4780, #272a42);
+}

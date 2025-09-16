@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="summary-card">
+  <h2>Personagem Criado</h2>
+
+  <div class="summary-block">
+    <h3>Atributos</h3>
+    <ul>
+      {% for k, v in personagem.atributos.to_dict().items() %}
+        <li><strong>{{ k.capitalize() }}:</strong> {{ v }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% if personagem.raca %}
+  <div class="summary-block">
+    <h3>Raça</h3>
+    <p><strong>{{ personagem.raca.nome }}</strong></p>
+    <ul>
+      <li>Movimento: {{ personagem.raca.movimento }}</li>
+      <li>Infravisão: {{ personagem.raca.infravisao }}</li>
+      <li>Alinhamento: {{ personagem.raca.alinhamento }}</li>
+      <li>Habilidade: {{ personagem.raca.habilidade_especial }}</li>
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if personagem.classe %}
+  <div class="summary-block">
+    <h3>Classe</h3>
+    <p><strong>{{ personagem.classe.nome }}</strong> (Vida: {{ personagem.classe.vida }})</p>
+    <p>Armas: {{ personagem.classe.armas }}</p>
+    <p>Armaduras: {{ personagem.classe.armaduras }}</p>
+    <p>Itens mágicos: {{ personagem.classe.itens_magicos }}</p>
+    <p>Habilidades: {{ personagem.classe.habilidades }}</p>
+  </div>
+  {% endif %}
+
+  <a href="{{ url_for('index') }}" class="summary-button">Criar outro personagem</a>
+</div>
+{% endblock %}

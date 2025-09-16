@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Passo 1: Escolha do personagem</h2>
+  <form method="post" action="{{ url_for('index') }}">
+    <label>Nome:
+      <input required type="text" name="nome" placeholder="Nome do seu personagem">
+    </label>
+
+    <fieldset>
+      <legend>Estilo de distribuição de atributos</legend>
+      <label><input type="radio" name="estilo" value="classico" checked> Clássico (3d6 direto)</label><br>
+      <label><input type="radio" name="estilo" value="aventureiro"> Aventureiro (6x 3d6 - distribua)</label><br>
+      <label><input type="radio" name="estilo" value="heroico"> Heróico (6x 4d6 drop lowest - distribua)</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Raça</legend>
+      {% for key, label in racas %}
+        <label><input type="radio" name="raca" value="{{ key }}" {% if loop.first %}checked{% endif %}> {{ label }}</label><br>
+      {% endfor %}
+    </fieldset>
+
+    <fieldset>
+      <legend>Classe</legend>
+      {% for key, label in classes %}
+        <label><input type="radio" name="classe" value="{{ key }}" {% if loop.first %}checked{% endif %}> {{ label }}</label><br>
+      {% endfor %}
+    </fieldset>
+
+    <button type="submit">Próximo</button>
+  </form>
+{% endblock %}

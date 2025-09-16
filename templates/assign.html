@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Distribuição de Valores</h2>
+  <p>Nome: <strong>{{ nome }}</strong></p>
+  <p>Estilo: <strong>{{ estilo }}</strong></p>
+
+  <form method="post" action="{{ url_for('create') }}" id="assignForm">
+    <input type="hidden" name="nome" value="{{ nome }}">
+    <input type="hidden" name="estilo" value="{{ estilo }}">
+    <input type="hidden" name="raca" value="{{ raca }}">
+    <input type="hidden" name="classe" value="{{ classe }}">
+
+    <div>
+      <p>Valores gerados:</p>
+      <ul>
+        {% for idx, v in valores %}
+          <li>Valor {{ idx }}: {{ v }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div>
+        <label>Força:
+          <select name="forca" class="val-select" required>
+            <option value="">-- escolha --</option>
+            {% for idx, v in valores %}
+              <option value="{{ v }}|{{ idx }}">{{ v }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label>Destreza:
+          <select name="destreza" class="val-select" required>
+            <option value="">-- escolha --</option>
+            {% for idx, v in valores %}
+              <option value="{{ v }}|{{ idx }}">{{ v }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label>Constituição:
+          <select name="constituicao" class="val-select" required>
+            <option value="">-- escolha --</option>
+            {% for idx, v in valores %}
+              <option value="{{ v }}|{{ idx }}">{{ v }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label>Inteligência:
+          <select name="inteligencia" class="val-select" required>
+            <option value="">-- escolha --</option>
+            {% for idx, v in valores %}
+              <option value="{{ v }}|{{ idx }}">{{ v }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label>Sabedoria:
+          <select name="sabedoria" class="val-select" required>
+            <option value="">-- escolha --</option>
+            {% for idx, v in valores %}
+              <option value="{{ v }}|{{ idx }}">{{ v }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label>Carisma:
+          <select name="carisma" class="val-select" required>
+            <option value="">-- escolha --</option>
+            {% for idx, v in valores %}
+              <option value="{{ v }}|{{ idx }}">{{ v }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p><small>Dica: cada valor deve ser usado apenas uma vez. O formulário possui JS para evitar duplicatas.</small></p>
+
+    <button type="submit">Criar personagem</button>
+  </form>
+
+  <script src="{{ url_for('static', filename='assign.js') }}"></script>
+{% endblock %}
