@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# model/atributos.py
+
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 class Atributos:
     def __init__(self):
         self.forca = 0

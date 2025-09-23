@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# model/raca.py
+
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 class Raca:
     def __init__(self, nome, movimento, infravisao, alinhamento, habilidade_especial):
         self.nome = nome

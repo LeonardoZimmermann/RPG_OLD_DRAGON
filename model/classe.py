@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# model/classe.py
+
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 class ClassePersonagem:
     def __init__(self, nome, vida, armas, armaduras, itens_magicos, habilidades):
         self.nome = nome

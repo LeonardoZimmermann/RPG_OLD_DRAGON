@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// impede seleção duplicada de valores
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 document.addEventListener("DOMContentLoaded", function () {
   const selects = Array.from(document.querySelectorAll(".val-select"));
 

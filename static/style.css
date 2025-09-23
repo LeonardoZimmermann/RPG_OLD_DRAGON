@@ -1,22 +1,37 @@
 /* corpo geral */
 body {
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
   background: #141726; 
+=======
+  background: #141726; /* azul escuro mais suave */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
   color: #e6e6f0;
   min-height: 100vh;
   margin: 0;
   padding: 40px 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* centralizar o conteúdo principal */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 main {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 header {
   text-align: center;       
   margin-bottom: 30px;     
+=======
+/* título principal */
+header {
+  text-align: center;       /* centraliza horizontalmente */
+  margin-bottom: 30px;      /* espaço entre o título e o passo 1 */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 }
 
 header h1 {
@@ -25,16 +40,29 @@ header h1 {
   margin: 0;
 }
 
+<<<<<<< HEAD
 
 form fieldset {
   background: #161a2b; 
+=======
+/* blocos (fieldset como cards) */
+form fieldset {
+  background: #161a2b; /* azul/roxo escuro */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
   border: none;
   border-radius: 12px;
   padding: 18px;
   margin-bottom: 20px;
+<<<<<<< HEAD
   box-shadow: 0 4px 14px rgba(10, 15, 40, 0.9); 
 }
 
+=======
+  box-shadow: 0 4px 14px rgba(10, 15, 40, 0.9); /* sombra fixa */
+}
+
+/* legend */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 form fieldset legend {
   color: #a3b0ff;
   font-weight: bold;
@@ -42,7 +70,11 @@ form fieldset legend {
   font-size: 1rem;
 }
 
+<<<<<<< HEAD
 
+=======
+/* inputs e selects */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 input[type="text"],
 select {
   width: 100%;
@@ -61,6 +93,10 @@ select:focus {
   box-shadow: 0 0 6px rgba(163, 176, 255, 0.8);
 }
 
+<<<<<<< HEAD
+=======
+/* botões */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 button {
   background: linear-gradient(180deg, #323b6b, #1f2236);
   color: #fff;
@@ -76,25 +112,46 @@ button:hover {
   background: linear-gradient(180deg, #3d4780, #272a42);
 }
 
+<<<<<<< HEAD
 .summary-card {
   background: #1f2236;           
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4); 
+=======
+/* Blocos do resumo com estilo igual aos fieldsets */
+.summary-card {
+  background: #1f2236;           /* mesmo fundo azul/roxo escuro */
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4); /* mesma sombra suave */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
   margin-bottom: 20px;
 }
 
 .summary-block {
+<<<<<<< HEAD
   background: #161a2b;           
   padding: 18px;
   border-radius: 12px;
   margin-bottom: 18px;
   box-shadow: 0 4px 14px rgba(10, 15, 40, 0.9); 
+=======
+  background: #161a2b;           /* mesmo fundo dos fieldsets */
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px rgba(10, 15, 40, 0.9); /* mesma sombra */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 }
 
 .summary-block h3 {
   margin-top: 0;
+<<<<<<< HEAD
   color: #a3b0ff;             
+=======
+  color: #a3b0ff;                /* mesmo tom das legendas */
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 }
 
 .summary-block ul {

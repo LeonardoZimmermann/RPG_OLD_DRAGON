@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# model/distribuicao.py
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 import random
 
 class EstiloDistribuicao:
@@ -17,6 +21,10 @@ class EstiloClassico(EstiloDistribuicao):
 
 class EstiloAventureiro(EstiloDistribuicao):
     def gerar_valores(self):
+<<<<<<< HEAD
+=======
+        # 6 valores de 3d6
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
         return [self.rolar_dados(3, 6) for _ in range(6)]
 
     def aplicar(self, personagem=None):
@@ -25,6 +33,10 @@ class EstiloAventureiro(EstiloDistribuicao):
 
 class EstiloHeroico(EstiloDistribuicao):
     def gerar_valores(self):
+<<<<<<< HEAD
+=======
+        # 6 valores: 4d6 drop lowest
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
         valores = []
         for _ in range(6):
             dados = [random.randint(1, 6) for _ in range(4)]

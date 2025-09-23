@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# app.py
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
 from flask import Flask, render_template, request
 from model import (
     Personagem, EstiloClassico, EstiloAventureiro, EstiloHeroico,
@@ -17,6 +21,10 @@ def index():
 
         personagem = Personagem(nome)
 
+<<<<<<< HEAD
+=======
+        # Estilo clássico: aplica direto
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
         if estilo == "classico":
             vals = EstiloClassico().aplicar()
             for k, v in vals.items():
@@ -25,6 +33,10 @@ def index():
             personagem.classe = {"guerreiro": Guerreiro, "ladrao": Ladrao, "mago": Mago}[classe]()
             return render_template("summary.html", personagem=personagem)
 
+<<<<<<< HEAD
+=======
+        # Aventureiro / Heroico: gerar valores e ir para assign
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
         if estilo == "aventureiro":
             valores = EstiloAventureiro().gerar_valores()
         elif estilo == "heroico":
@@ -32,6 +44,10 @@ def index():
         else:
             return "Estilo inválido", 400
 
+<<<<<<< HEAD
+=======
+        # enviar valores para a página de distribuição (assign)
+>>>>>>> 41e954fada5d3360a5540019e9f442d1d1acfa30
         return render_template(
             "assign.html",
             nome=nome,
